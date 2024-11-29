@@ -1,5 +1,5 @@
 # Automating EDR Compliance with Tines
-NIST updated the [Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework).  They introduced the Govern function as the glue to the other functions of risk management:
+NIST updated the Cybersecurity Framework (CSF).  They introduced the Govern function as the glue to the other functions of risk management:
 - Identify,
 - Protect,
 - Detect,
@@ -61,4 +61,7 @@ Tom
 - [Tines Pages](https://www.tines.com/docs/pages/)
 - [Tines Community Edition](https://www.tines.com/pricing/)
 
+## NIST
+- [CSF](https://www.nist.gov/cyberframework)
+- 
 [Previous Blog](https://working-with-tines-resources.automatesecops.com/)
