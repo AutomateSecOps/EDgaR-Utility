@@ -47,6 +47,7 @@ In short, EDR compliance is challenging. With the Tines automation platform, you
 I hope you found this useful.
 
 Once you start automating, you cannot stop!
+
 Happy Building.
 
 Tom
