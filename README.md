@@ -53,6 +53,7 @@ Tom
 
 ## Tines Documenation
 - [Tines AI Automatic Mode Event Transformation](https://www.tines.com/docs/actions/types/event-transformation/automatic//)
+- [Tines IS PRESENT Function](https://www.tines.com/docs/formulas/functions/is-present/)
 - [Tines Object Function](https://www.tines.com/docs/formulas/functions/object/)
 - [Tines Append Function](https://www.tines.com/docs/formulas/functions/append/)
 - [Tines Append Element to Resource](https://www.tines.com/api/resources/append-element/)
