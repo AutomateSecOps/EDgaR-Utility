@@ -6,7 +6,7 @@ NIST updated the Cybersecurity Framework (CSF).  They introduced the Govern func
 - Respond,
 - and Recover.
 
-Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.  Risk management provides a means to manage business risk.  Compliance is the means to ensure adherence to the infosec standards and policies.
+Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.  Cyber risk management provides a means to manage business risk.  Compliance is the means to ensure adherence to the infosec standards and policies.
 
 To assit with IT departments with EDR compliance, my teammate and I created a web form where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform.
 
