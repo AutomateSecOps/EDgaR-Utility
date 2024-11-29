@@ -20,7 +20,7 @@ The hostnames are parsed from the csv, and each hostname is exploded as an indiv
 
 If an analyst submits a host with a FQDN, and the host is registered without a FQDN, CrowdStrike Host API will not find the host.  The API will return a FQDN if searching just by the host name.
 
-For example, host1.mydomain.com is registered in the console.  The Falcon API will return it if the hostname submitted is host1 or host1.mydomain.com, but if host1.mydomain.com is submitted and host1 is registered, the Falcon Host API will not find it.
+For example, host1.mydomain.com is registered in the console.  The Falcon API will return it if the hostname submitted as host1 or host1.mydomain.com, but if host1.mydomain.com is submitted and host1 is registered, the Falcon Host API will not find it.
 
 ### CrowdStrike Tagging Trigger Logic
 
