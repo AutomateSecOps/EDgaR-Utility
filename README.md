@@ -42,7 +42,7 @@ If false, the workflow continued to the CrowdStrike Tag host action with the two
 
 <img src="./images/Tag-3Hosts-In-CS.png">
 
-In short, EDR compliance is challenging. With the Tines automation platform, you can save time and resources by providing a webform for IT departments to check if the CrowdStrike Falcon Sensor registred and is tagged properly. 
+In short, EDR compliance is challenging. With the Tines automation platform, you can save time and resources by providing a webform for IT departments to check if the CrowdStrike Falcon Sensor is registred and tagged properly. 
 
 I hope you found this useful.
 
