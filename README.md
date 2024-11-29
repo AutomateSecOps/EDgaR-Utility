@@ -63,5 +63,5 @@ Tom
 
 ## NIST
 - [CSF](https://www.nist.gov/cyberframework)
-- 
+
 [Previous Blog](https://working-with-tines-resources.automatesecops.com/)
