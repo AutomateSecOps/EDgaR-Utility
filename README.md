@@ -12,7 +12,7 @@ To assit with IT departments with EDR compliance, my teammate and I created a we
 
 In addition, hosts are tagged with the departmental ID, so the hosts are incorporated into the CrowdStrike Fusion Workflows for vulnerability reporting and for alert notification on host detections by the Falcon sensor.
 
-The webform provides the analyst the option to perform an audit or to tag CrowdStrike hosts.  The workflows are straightforward using the Tines CrowdStrike templates for the Get host IDs, Get Host details, and Tag Host in CrowdStrike, which are available in the Tines product templates.
+ The workflows are straightforward using the Tines CrowdStrike templates for the Get host IDs, Get Host details, and Tag Host in CrowdStrike, which are available in the Tines product templates.
 ### AI Automatic Mode to Strip the FQDN of the hostname
 The hostnames are parsed from the csv, and each hostname is exploded as an individual event.  Since the CrowdStrike API for host management has a quirk in regards to fully qualified domain names (FQDN), we used the Tines AI Automatic mode in Event Transformation action to strip the hostname of the FQDN.
 
