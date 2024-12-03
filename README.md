@@ -1,5 +1,7 @@
 # Automating EDR Compliance with Tines
-NIST updated the Cybersecurity Framework (CSF).  They introduced the Govern function as the glue to the other functions of risk management:
+NIST updated the Cybersecurity Framework (CSF).  
+
+They introduced the Govern function as the glue to the other functions of risk management:
 - Identify,
 - Protect,
 - Detect,
@@ -8,7 +10,7 @@ NIST updated the Cybersecurity Framework (CSF).  They introduced the Govern func
 
 Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.  Cyber risk management provides a means to manage business risk.  Compliance is the means to ensure adherence to the infosec standards and policies.
 
-To assit with IT departments with EDR compliance, my teammate and I created a web form where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform.
+To assit IT departments with EDR compliance, my teammate and I created a web form where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform.
 
 In addition, hosts are tagged with the departmental ID, so the hosts are incorporated into the CrowdStrike Fusion Workflows for vulnerability reporting and for alert notification on host detections by the Falcon sensor.
 
@@ -20,7 +22,7 @@ The hostnames are parsed from the csv, and each hostname is exploded as an indiv
 
 If an analyst submits a host with a FQDN, and the host is registered without a FQDN, CrowdStrike Host API will not find the host.  The API will return a FQDN if searching just by the host name.
 
-For example, host1.mydomain.com is registered in the console.  The Falcon API will return it if the hostname submitted as host1 or host1.mydomain.com, but if host1.mydomain.com is submitted and host1 is registered, the Falcon Host API will not find it.
+For example, host1.mydomain.com is registered in the console.  The Falcon API will return it if the hostname is submitted as host1 or host1.mydomain.com, but if host1.mydomain.com is submitted and host1 is registered, the Falcon Host API will not find it.
 
 ### CrowdStrike Tagging Trigger Logic
 
@@ -28,21 +30,23 @@ In the webform, the analyst or IT admin can enter 3 tags for a host:
 
 <img src="./images/CS-Tagging-Webform.png">
 
-If all three tags are not used, the CrowdStrike Host API will create a blank FalconGrouping tag on the host.  In order to bypass the blank tag, we created a trigger logic based on the number of tags used.  The first trigger logic used this formula:
+If all three tags are not used, the CrowdStrike Host API will create a blank FalconGrouping tag on the host.  In order to bypass the blank tag, we created a trigger based on the number of tags used.  The first trigger logic uses this formula:
 
 <img src="./images/Trigger-MoreThan1tag.png">
 
-If there was only one tag, it would follow the No Match pathway for one tag.
+If there is only one tag, the workflow follows the "No Match" trigger pathway for one tag.
 
-If it was true, then the workflow continued to the second trigger action to determine if three tags were used:
+If it is true, then the workflow continues to the second trigger action to determine if three tags are used:
 
 <img src="./images/Trigger-MoreThan2tag.png">
 
-If false, the workflow continued to the CrowdStrike Tag host action with the two tags.  If three tags were used, the workflow continued to the three tag CrowdStrike action:
+If false, the workflow continues to the CrowdStrike Tag host action with the two tags.  If three tags are used, the workflow continues to the three tag CrowdStrike action:
 
 <img src="./images/Tag-3Hosts-In-CS.png">
 
-In short, EDR compliance is challenging. With the Tines automation platform, you can save time and resources by providing a webform for IT departments to check if the CrowdStrike Falcon Sensor is registred and tagged properly. 
+In short, EDR compliance is challenging. 
+
+With the Tines automation platform, you can save time and resources by providing a webform for IT departments to check if the CrowdStrike Falcon Sensor is registred to the console and tagged properly. 
 
 I hope you found this useful.
 
