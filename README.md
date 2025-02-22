@@ -24,7 +24,7 @@ If an analyst submits a host with a FQDN, and the host is registered without a F
 
 For example, host1.mydomain.com is registered in the console.  The Falcon API will return it if the hostname is submitted as host1 or host1.mydomain.com, but if host1.mydomain.com is submitted and host1 is registered, the Falcon Host API will not find it.
 
-### CrowdStrike Tagging Trigger Logic
+### Conditional Tines Page Feature
 
 In the webform, the analyst or IT admin can enter 3 tags for a host:
 
