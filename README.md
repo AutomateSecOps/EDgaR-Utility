@@ -16,11 +16,11 @@ In addition, hosts are tagged with the departmental ID, so the hosts are incorpo
 
  The workflows are straightforward using the Tines CrowdStrike templates for the Get host IDs, Get Host details, and Tag Host in CrowdStrike, which are available in the Tines product templates.
 ### AI Automatic Mode to Strip the FQDN of the hostname
-The hostnames are parsed from the csv, and each hostname is exploded as an individual event.  Since the CrowdStrike /devices/queries/devices/v1 API endpoint for host management has a quirk in regards to fully qualified domain names (FQDN), we used the Tines AI Automatic mode in Event Transformation action to strip the hostname of the FQDN.
+The hostnames are parsed from the csv, and each hostname is exploded as an individual event.  Since the CrowdStrike /devices/queries/devices/v1 API endpoint for host management has a quirk in regards to fully qualified domain names (FQDN), we used the Tines AI Automatic mode in Event Transformation action to extract the hostname of the FQDN.
 
 <img src="./images/AI-Automatic-Mode-StripFQDN.png">
 
-If an analyst submits a host with a FQDN, and the host is registered without a FQDN, CrowdStrike Host API will not find the host.  The API will return a FQDN if searching just by the host name.
+If an analyst submits a host with a FQDN, and the host is registered without a FQDN, the CrowdStrike Host API will not find the host.  The API will return a FQDN if searching just by the hostname.
 
 For example, host1.mydomain.com is registered in the console.  The Falcon API will return it if the hostname is submitted as host1 or host1.mydomain.com, but if host1.mydomain.com is submitted and host1 is registered, the Falcon Host API will not find it.
 
