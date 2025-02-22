@@ -62,6 +62,7 @@ Tom
 - [Tines Append Function](https://www.tines.com/docs/formulas/functions/append/)
 - [Tines Append Element to Resource](https://www.tines.com/api/resources/append-element/)
 - [Tines Pages](https://www.tines.com/docs/pages/)
+- [Tines Pages Conditional Elements](https://www.tines.com/docs/pages/conditional-page-elements/)
 - [Tines Community Edition](https://www.tines.com/pricing/)
 
 ## NIST
