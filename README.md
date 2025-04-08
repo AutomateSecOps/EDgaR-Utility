@@ -53,7 +53,7 @@ At the end of the workflow, we used a AI Automatic Event Transformation to creat
 
 In short, EDR compliance is challenging. 
 
-With the Tines automation platform, you can save time and resources by providing a webform for IT departments to check if the CrowdStrike Falcon Sensor is registred to the console and tagged properly. 
+With the Tines Pages and their automation platform, you can save time and resources by providing a webform for IT departments to check if the CrowdStrike Falcon Sensor is registred to the console and tagged properly. 
 
 I hope you found this useful.
 
