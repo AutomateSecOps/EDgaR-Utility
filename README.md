@@ -30,7 +30,7 @@ For example, host1.mydomain.com is registered in the console.  The Falcon API wi
 
 We use a Tines webform to initiate the workflow.
 
-Tines introduced a new feature for Tines Pages.  The page builder can hide or show page elements based on certain conditions.
+Tines introduced a new feature for their Pages.  The page builder can hide or show page elements based on certain conditions.
 
 We used this new feature in our CrowdStrike tagging webform to hide CrowdStrike tags that a department may not use.
 
