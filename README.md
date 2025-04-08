@@ -8,9 +8,9 @@ They introduced the Govern function as the glue to the other functions of risk m
 - Respond,
 - and Recover.
 
-Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.  Cyber risk management provides a means to manage business risk.  Compliance is the means to ensure adherence to the infosec standards and policies.
+Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.  Cyber risk management provides a means to manage business risk.  Compliance is the means to ensure adherence to the infosec standards and policies to build resilency.
 
-To assit IT departments with EDR compliance, my teammate and I created a web form where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform and tagged properly.
+To assit IT departments with Endpoint Detection & Response (EDR) compliance, my teammate and I created a Tines webform where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform and tagged properly.
 
 CrowdStrike hosts, that are tagged with the departmental ID, are incorporated into CrowdStrike Fusion Workflows for email alert notifications. In addition, the same tags are used in CrowdStrike Schedule Reports for vulnerability reporting. 
 
@@ -37,7 +37,9 @@ We used this new feature in our CrowdStrike tagging webform to hide CrowdStrike 
 <img src="./images/Tines-Pages-Conditions-1.png">
 
 ### The CrowdStrike Asset Discovery API
-The third phase of the Tines EDR compliance automation project involved discovering "unmanaged" endpoints.  
+The third phase of the Tines EDR compliance automation project involved discovering "unmanaged" endpoints.
+
+In the risk managamenet process, an organization needs to identify assets in order to protect them.   With Tines and the CrowdStrike Assest Discovery API, we were able to automate the discovery of unmanaged assets.
 
 Once the Falcon Sensor is installed on an endpoint, it discovers its neighbors via a passive method.  The Falcon Sensor determines which endpoints on the network are not present in the Falcon console. 
 
@@ -55,7 +57,9 @@ In short, EDR compliance is challenging.
 
 With the Tines Pages and their automation platform, you can save time and resources by providing a webform for IT departments to check if the CrowdStrike Falcon Sensor is registred to the console and tagged properly. 
 
-I hope you found this useful.
+I hope you found this useful.  
+
+You can import this Tines story into your tenant by downloading the json file in the [TinesStory](https://github.com/AutomateSecOps/EDgaR-Utility/tree/main/TinesStory) folder
 
 Once you start automating, you cannot stop!
 
