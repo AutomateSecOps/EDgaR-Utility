@@ -37,7 +37,17 @@ We used this new feature to hide CrowdStrike tags that a department may not use.
 ### The CrowdStrike Asset Discovery API
 The third phase of the Tines EDR compliance automation project involved discovering "unmanaged" endpoints.  
 
-If
+Once the Falcon Sensor is installed on an endpoint, it discovers its neighbors via a passive method.  The Falcon Sensor determines which endpoints on the network are not present in the Falcon console. 
+
+Those devices are considered "unmanaged" neighbors, since they are not managed by Falcon platform.
+
+We created a scheduled workflow where Tines queries the Asset Discovery API for unmanaged neighbors discovered in the last 24 hours.  
+
+The Tines workflow generates a csv with the a list of unmanaged neighbors with information regarding the neighbor who discover the unmanaged entities.
+
+At the end of the workflow, we used a AI Automatic Event Transformation to create an HTML summary in the email:
+
+<img src="./images/AI-Automatic-Mode-HTML-Summary.png">
 
 In short, EDR compliance is challenging. 
 
