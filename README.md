@@ -28,9 +28,11 @@ For example, host1.mydomain.com is registered in the console.  The Falcon API wi
 
 ### Conditional Tines Page Feature
 
-Tines introduced a new feature for Pages.  The page builder can hide or show page elements based on certain conditions.
+We use a Tines webform to initiate the workflow.
 
-We used this new feature to hide CrowdStrike tags that a department may not use.
+Tines introduced a new feature for Tines Pages.  The page builder can hide or show page elements based on certain conditions.
+
+We used this new feature in our CrowdStrike tagging webform to hide CrowdStrike tags that a department may not use.
 
 <img src="./images/Tines-Pages-Conditions-1.png">
 
@@ -39,13 +41,13 @@ The third phase of the Tines EDR compliance automation project involved discover
 
 Once the Falcon Sensor is installed on an endpoint, it discovers its neighbors via a passive method.  The Falcon Sensor determines which endpoints on the network are not present in the Falcon console. 
 
-Those devices are considered "unmanaged" neighbors, since they are not managed by Falcon platform.
+Those devices are considered "unmanaged" neighbors, since they are not managed by the Falcon platform.
 
 We created a scheduled workflow where Tines queries the Asset Discovery API for unmanaged neighbors discovered in the last 24 hours.  
 
 The Tines workflow generates a csv with the a list of unmanaged neighbors with information regarding the neighbor who discover the unmanaged entities.
 
-At the end of the workflow, we used a AI Automatic Event Transformation to create an HTML summary in the email:
+At the end of the workflow, we used a AI Automatic Event Transformation to create an HTML summary in the email to identify the top five departments with unmanaged endpoints:
 
 <img src="./images/AI-Automatic-Mode-HTML-Summary.png">
 
@@ -65,7 +67,6 @@ Tom
 - [Tines AI Automatic Mode Event Transformation](https://www.tines.com/docs/actions/types/event-transformation/automatic//)
 - [Tines IS PRESENT Function](https://www.tines.com/docs/formulas/functions/is-present/)
 - [Tines Object Function](https://www.tines.com/docs/formulas/functions/object/)
-- [Tines Append Function](https://www.tines.com/docs/formulas/functions/append/)
 - [Tines Append Element to Resource](https://www.tines.com/api/resources/append-element/)
 - [Tines Pages](https://www.tines.com/docs/pages/)
 - [Tines Pages Conditional Elements](https://www.tines.com/docs/pages/conditional-page-elements/)
