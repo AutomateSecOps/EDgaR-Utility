@@ -34,6 +34,10 @@ We used this new feature to hide CrowdStrike tags that a department may not use.
 
 <img src="./images/Tines-Pages-Conditions-1.png">
 
+### The CrowdStrike Asset Discovery API
+The third phase of the Tines EDR compliance automation project involved discovering "unmanaged" endpoints.  
+
+If
 
 In short, EDR compliance is challenging. 
 
