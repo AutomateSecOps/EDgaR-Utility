@@ -10,7 +10,7 @@ They introduced the Govern function as the glue to the other functions of risk m
 
 Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.  Cyber risk management provides a means to manage business risk.  Compliance is the means to ensure adherence to the infosec standards and policies.
 
-To assit IT departments with EDR compliance, my teammate and I created a web form where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform.
+To assit IT departments with EDR compliance, my teammate and I created a web form where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform and tagged properly.
 
 CrowdStrike hosts, that are tagged with the departmental ID, are incorporated into CrowdStrike Fusion Workflows for email alert notifications. In addition, the same tags are used in CrowdStrike Schedule Reports for vulnerability reporting. 
 
