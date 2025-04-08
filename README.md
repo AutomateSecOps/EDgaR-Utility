@@ -45,7 +45,7 @@ Those devices are considered "unmanaged" neighbors, since they are not managed b
 
 We created a scheduled workflow where Tines queries the Asset Discovery API for unmanaged neighbors discovered in the last 24 hours.  
 
-The Tines workflow generates a csv with the a list of unmanaged neighbors with information regarding the neighbor who discover the unmanaged entities.
+The Tines workflow generates a csv with the a list of unmanaged neighbors with information regarding the neighbor who discovered the unmanaged entities.
 
 At the end of the workflow, we used a AI Automatic Event Transformation to create an HTML summary in the email to identify the top five departments with unmanaged endpoints:
 
