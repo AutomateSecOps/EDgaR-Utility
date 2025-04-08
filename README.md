@@ -26,21 +26,11 @@ For example, host1.mydomain.com is registered in the console.  The Falcon API wi
 
 ### Conditional Tines Page Feature
 
-In the webform, the analyst or IT admin can enter 3 tags for a host:
+Tines introduced a new feature for Pages.  The builder can hide or show page elements based on certain conditions.
 
+We used this new feature to hide CrowdStrike tags that a department may not use.
 
-
-If all three tags are not used, the CrowdStrike Host API will create a blank FalconGrouping tag on the host.  In order to bypass the blank tag, we created a trigger based on the number of tags used.  The first trigger logic uses this formula:
-
-
-
-If there is only one tag, the workflow follows the "No Match" trigger pathway for one tag.
-
-If it is true, then the workflow continues to the second trigger action to determine if three tags are used:
-
-
-
-If false, the workflow continues to the CrowdStrike Tag host action with the two tags.  If three tags are used, the workflow continues to the three tag CrowdStrike action:
+<img src="./images/Tines-Pages-Conditions-1.png">
 
 
 In short, EDR compliance is challenging. 
