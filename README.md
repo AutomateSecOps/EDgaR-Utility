@@ -10,7 +10,26 @@ They introduced the Govern function as the glue to the other functions of risk m
 
 Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.  Cyber risk management provides a means to manage business risk.  Compliance is the means to ensure adherence to the infosec standards and policies to build resilency.
 
-To assit IT departments with Endpoint Detection & Response (EDR) compliance, my teammate and I created a Tines webform where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform and tagged properly.
+### Identify - The CrowdStrike Asset Discovery API Endpoint
+If an organization cannot identify an asset, it cannot protect it.  To assist with identifying assets in their environment, CrowdStrike created the Asset Discovery API endpoint.
+
+This API endpoint discovers "unmanaged" endpoints.
+
+Once the Falcon Sensor is installed on an endpoint, it discovers its neighbors via a passive method.  The Falcon Sensor determines which endpoints on the network are not present in the Falcon console. 
+
+Those devices are considered "unmanaged" neighbors, since they are not managed by the Falcon platform.
+
+We created a scheduled workflow where Tines queries the Asset Discovery API for unmanaged neighbors discovered in the last 24 hours.  
+
+The Tines workflow generates a csv with the a list of unmanaged neighbors with information regarding the neighbor who discovered the unmanaged entities.
+
+At the end of the workflow, we used a AI Automatic Event Transformation to create an HTML summary in the email to identify the top five departments with unmanaged endpoints:
+
+<img src="./images/AI-Automatic-Mode-HTML-Summary.png">
+
+With this 
+
+To assit IT departments with identifying endpoints with no Endpoint Detection & Response (EDR), my teammate and I created a Tines webform where an IT admin or infosec analyst, who does not have access to the CrowdStrike console, can upload a csv with hostnames to check to see if the host is present in the CrowdStrike Falcon platform and tagged properly.
 
 CrowdStrike hosts, that are tagged with the departmental ID, are incorporated into CrowdStrike Fusion Workflows for email alert notifications. In addition, the same tags are used in CrowdStrike Schedule Reports for vulnerability reporting. 
 
@@ -37,21 +56,7 @@ We used this new feature in our CrowdStrike tagging webform to hide CrowdStrike 
 <img src="./images/Tines-Pages-Conditions-1.png">
 
 ### The CrowdStrike Asset Discovery API
-The third phase of the Tines EDR compliance automation project involved discovering "unmanaged" endpoints.
 
-In the risk managamenet process, an organization needs to identify assets in order to protect them.   With Tines and the CrowdStrike Assest Discovery API, we were able to automate the discovery of unmanaged assets.
-
-Once the Falcon Sensor is installed on an endpoint, it discovers its neighbors via a passive method.  The Falcon Sensor determines which endpoints on the network are not present in the Falcon console. 
-
-Those devices are considered "unmanaged" neighbors, since they are not managed by the Falcon platform.
-
-We created a scheduled workflow where Tines queries the Asset Discovery API for unmanaged neighbors discovered in the last 24 hours.  
-
-The Tines workflow generates a csv with the a list of unmanaged neighbors with information regarding the neighbor who discovered the unmanaged entities.
-
-At the end of the workflow, we used a AI Automatic Event Transformation to create an HTML summary in the email to identify the top five departments with unmanaged endpoints:
-
-<img src="./images/AI-Automatic-Mode-HTML-Summary.png">
 
 In short, EDR compliance is challenging. 
 
