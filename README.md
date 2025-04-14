@@ -2,16 +2,19 @@
 NIST updated the Cybersecurity Framework (CSF).  
 
 They introduced the Govern function as the glue to the other functions of risk management:
+
 - Identify,
 - Protect,
 - Detect,
 - Respond,
 - and Recover.
 
-Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.  Cyber risk management provides a means to manage business risk.  Compliance is the means to ensure adherence to the infosec standards and policies to build resilency.
+Governance creates a framework taliored to support the organization's critical mission. To ensure daily operations in the event of a cyber incident, business continuity plans, infosec policies and standards are created for resiliency.
 
 ### Identify - The CrowdStrike Asset Discovery API Endpoint
-If an organization cannot identify an asset, it cannot protect it.  To assist with identifying assets in their environment, CrowdStrike created the Asset Discovery API endpoint.
+If an organization cannot identify an asset, it cannot protect it, even if there is governance.  
+
+To assist with identifying assets in their environment, CrowdStrike created the Asset Discovery API endpoint.
 
 This API endpoint discovers "unmanaged" endpoints.
 
