@@ -60,7 +60,7 @@ With the Tines Pages and their automation platform, you can save time and resour
 
 I hope you found this useful.  
 
-You can import this Tines story into your tenant by downloading the json file in the [TinesStory](https://github.com/AutomateSecOps/EDgaR-Utility/tree/main/TinesStory) folder
+You can import this Tines story into your tenant by downloading the json file in the [TinesStory](https://github.com/AutomateSecOps/EDgaR-Utility/tree/main/TinesStory) folder.
 
 Once you start automating, you cannot stop!
 
