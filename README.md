@@ -38,7 +38,7 @@ The Tines workflows are straightforward using the Tines CrowdStrike templates fo
 
 ### AI Automatic Mode to Strip the FQDN of the hostname
 
-The hostnames are parsed from the csv. Each hostname is exploded as an individual event.  Since the CrowdStrike /devices/queries/devices/v1 API endpoint for host management has a quirk in regards to fully qualified domain names (FQDN), we used the Tines AI Automatic mode in Event Transformation action to extract the hostname from the FQDN.
+After the analyst uploads the csv, the hostnames are parsed. Each hostname is exploded as an individual event.  Since the CrowdStrike /devices/queries/devices/v1 API endpoint for host management has a quirk in regards to fully qualified domain names (FQDN), we used the Tines AI Automatic mode in Event Transformation action to extract the hostname from the FQDN.
 
 <img src="./images/AI-Automatic-Mode-StripFQDN.png">
 
